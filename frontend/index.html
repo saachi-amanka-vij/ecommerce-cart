@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>🛒 E-Shop</h1>
+
+        <div class="header-actions">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button id="searchBtn">🔍</button>
+            </div>
+
+            <div class="cart-summary">
+                <span>Cart: <span id="cartCount">0</span> items</span>
+                <button id="cartToggle">🛒</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- LOADING -->
+    <div id="loading" class="loading hidden">
+        <p>Loading products...</p>
+    </div>
+
+    <!-- ERROR -->
+    <div id="error" class="error hidden">
+        <p>Failed to load products. Please try again.</p>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section id="productsSection" class="products-section">
+        <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <!-- CART SIDEBAR -->
+    <div id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart">✖</button>
+        </div>
+
+        <div id="emptyCartMessage" class="empty-cart">
+            Cart is empty
+        </div>
+
+        <div id="cartItems" class="cart-items"></div>
+
+        <div id="cartFooter" class="cart-footer">
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button id="clearCart">Clear Cart</button>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="overlay" class="overlay"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

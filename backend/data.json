@@ -1,0 +1,16 @@
+[
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 4999,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    "quantity": 1
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 1999,
+    "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad",
+    "quantity": 1
+  }
+]
